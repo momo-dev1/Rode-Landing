@@ -1,0 +1,11 @@
+[data-reveal] {
+    opacity: 0;
+    transition: 0.75s ease;
+}
+
+[data-reveal].revealed {
+    transform: translate(0);
+    opacity: 1;
+}
+
+[data-reveal="left"] { transform: translateX(-30px); }
