@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>RØDE Microphones</title>
     <link rel="icon" href="https://cdn.rode.com/website/rode-favicon.svg">
+    <script src="./script.js" defer></script>
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
@@ -20,12 +21,13 @@
             }
         }
     </script>
+    <link rel="stylesheet" href="./style.css">
 </head>
 
 <body>
-    <header>
+    <header class="fixed top-0 w-full z-50 shadow-2xl" data-header>
         <section
-            class="py-1 px-44 lg:border-y border-gray-300 hidden lg:flex justify-between">
+            class="py-1 px-44 lg:border-y border-gray-300 hidden lg:flex justify-between bg-white ">
             <div>
                 <img class="inline-block w-5" src="./assets/location.png" alt="">
                 <span class="text-sm text-gray-600 font-semibold">EN</span>
@@ -35,7 +37,7 @@
                 <img class="w-7" src="./assets/account.png" alt="">
             </div>
         </section>
-        <section class="bg-white px-2">
+        <section class="bg-white px-2 ">
             <nav
                 class="lg:w-9/12 flex justify-around lg:justify-between mx-auto py-2 lg:py-6">
                 <div class="flex lg:hidden">
@@ -68,7 +70,7 @@
         </section>
     </header>
 
-    <section class="bg-black flex items-center flex-col md:flex-row">
+    <section class="bg-black flex items-center flex-col md:flex-row mt-24">
         <div>
             <img class="hidden md:block" src="./assets/sec1-full.jpg" alt="">
             <img class="md:hidden block" src="./assets/sec1.jpg" alt="">
@@ -240,31 +242,36 @@
             class="text-center text-2xl md:text-4xl mt-6 md:mt-10 text-[#767676] font-bold">
             Explore The RØDE Range</h1>
         <div class="relative my-3 sm:my-6 md:my-10">
-            <img class="mx-auto w-fit" src="./assets/sec6-1.png" alt="">
+            <img class="mx-auto w-fit" src="./assets/sec6-1.png" alt="" data-reveal="left"
+                data-reveal-delay="0.25s">
             <div
-                class="absolute flex items-center justify-center top-[40%] left-[13%] mx-auto w-9/12">
-                <img class=" " src="./assets/microphone.svg" alt="">
+                class=" absolute flex items-center justify-center top-[40%] left-[13%] mx-auto w-9/12">
+                <img class=" " src="./assets/microphone.svg" alt="" data-reveal="left"
+                    data-reveal-delay="0.25s">
             </div>
         </div>
         <div class="relative my-3 sm:my-6 md:my-10">
             <img class="mx-auto w-fit" src="./assets/sec6-2.jpg" alt="">
             <div
                 class="absolute flex items-center justify-center top-[40%] left-[13%] mx-auto w-9/12">
-                <img class=" " src="./assets/mixer.svg" alt="">
+                <img class=" " src="./assets/mixer.svg" alt="" data-reveal="left"
+                    data-reveal-delay="0.25s">
             </div>
         </div>
         <div class="relative my-3 sm:my-6 md:my-10">
             <img class="mx-auto w-fit" src="./assets/sec6-3.png" alt="">
             <div
                 class="absolute flex items-center justify-center top-[40%] left-[13%] mx-auto w-9/12">
-                <img class=" " src="./assets/software.svg" alt="">
+                <img class=" " src="./assets/software.svg" alt="" data-reveal="left"
+                    data-reveal-delay="0.25s">
             </div>
         </div>
         <div class="relative my-3 sm:my-6 md:my-10">
             <img class="mx-auto w-fit" src="./assets/sec6-4.png" alt="">
             <div
                 class="absolute flex items-center justify-center top-[40%] left-[13%] mx-auto w-9/12">
-                <img class=" " src="./assets/accessories.svg" alt="">
+                <img class=" " src="./assets/accessories.svg" alt="" data-reveal="left"
+                    data-reveal-delay="0.25s">
 
             </div>
         </div>
